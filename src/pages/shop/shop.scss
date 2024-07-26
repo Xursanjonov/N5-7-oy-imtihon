@@ -1,0 +1,48 @@
+.shop {
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.shop__container {
+    max-width: 1150px;
+    width: 100%;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+
+    .btn-more {
+        width: 163px;
+        height: 40px;
+        margin: 20px auto 0;
+        border-radius: 80px;
+        border: 0;
+        font-size: 18px;
+        border: 1px solid #141718;
+        color: #141718;
+    }
+}
+
+// stack-container
+.stack-container {
+    max-width: 1150px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+
+    select, option {
+        width: 100px;
+        height: 30px;
+        padding: 0 10px;
+        border-radius: 4px;
+        font-size: 16px;
+        font-weight: 600;
+        color: #6C7275;
+    }
+}

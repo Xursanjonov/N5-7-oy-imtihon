@@ -1,0 +1,133 @@
+.home__products-title {
+    max-width: 1150px;
+    width: 100%;
+    margin: 48px auto;
+    display: flex;
+    padding: 5px 0;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+
+    &-h3 {
+        width: 149px;
+        height: 88px;
+        font-family: Poppins;
+        font-size: 40px;
+        font-weight: 500;
+        line-height: 44px;
+        letter-spacing: -0.4000000059604645px;
+        text-align: left;
+        color: #000;
+    }
+}
+
+.home__categories {
+    max-width: 1150px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+    background-color: transparent;
+    overflow-x: auto;
+
+    &-item {
+        width: 240px;
+        height: 60px;
+        margin: 0 auto;
+        padding: 10px 5px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        justify-content: center;
+        border: 1px solid #0002;
+        border-radius: 6px;
+        background-color: white;
+    }
+
+    .item-name {
+        width: 250px;
+        text-align: center;
+        padding: 5px 10px;
+        font-size: 14px;
+        font-weight: 600;
+        background-color: white;
+    }
+
+    .item-img {
+        width: 120px;
+        height: 50px;
+        border-radius: 5px;
+        object-fit: scale-down;
+
+        &-image {
+            width: 50px;
+            height: 50px;
+            border-radius: 5px;
+            object-fit: cover;
+        }
+    }
+
+    /* width */
+    &::-webkit-scrollbar {
+        width: 10px;
+        height: 3px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px rgb(157, 157, 157);
+        border-radius: 10px;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+        background: #343839;
+        border-radius: 10px;
+    }
+}
+
+.home__products {
+    max-width: 1150px;
+    width: 100%;
+    margin: 20px auto 50px;
+    padding: 10px 5px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 25px;
+    overflow-x: auto;
+    background-color: transparent;
+
+    /* width */
+    &::-webkit-scrollbar {
+        width: 10px;
+        height: 6px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px grey;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+        background: #343839;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+}
+
+// stack-products
+.stack-products {
+    max-width: 1150px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

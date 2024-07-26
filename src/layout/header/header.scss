@@ -1,0 +1,131 @@
+.header__top {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  position: relative;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 22px;
+  text-align: center;
+  color: #343839;
+  background-color: #F3F5F7;
+
+
+  &-icon {
+    padding-bottom: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &-close {
+    right: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    border: 0;
+    background-color: transparent;
+  }
+}
+
+.color {
+  color: #377DFF;
+  border-color: #377DFF;
+}
+
+.none {
+  display: none;
+}
+
+.header {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px 0;
+  top: 0;
+  background-color: white;
+  position: sticky;
+  border-bottom: 1px solid #ddd;
+  z-index: 2004;}
+
+.header__nav {
+  max-width: 1150px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .logo {
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: center;
+
+    span {
+      font-family: Poppins;
+      font-size: 28px;
+      font-weight: 500;
+      line-height: 24px;
+      text-align: center;
+      color: gray;
+    }
+  }
+
+  .header__nav__ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .header__nav__ul__lists {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+
+      a {
+        font-family: Space Grotesk;
+        font-weight: 600;
+        line-height: 24px;
+        color: #6C7275;
+
+        &:hover {
+          color: black;
+          font-weight: 600;
+        }
+
+        &.active {
+          font-weight: 600;
+          color: black;
+        }
+      }
+
+    }
+
+    .header__nav__div__btns {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+
+      .btns-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 0;
+        background-color: transparent;
+      }
+
+    }
+  }
+}

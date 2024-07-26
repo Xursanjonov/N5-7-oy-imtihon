@@ -1,0 +1,39 @@
+.articles-cart {
+    width: 357px;
+    height: 413px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 10px;
+}
+
+.articles-cart-p {
+    width: 352px;
+    height: 28px;
+    color: #23262F;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    text-align: left;
+}
+
+.articles-cart-btn {
+    width: 115px;
+    height: 28px;
+    gap: 4px;
+    border: 0;
+    background-color: transparent;
+    border-bottom: 1px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: -0.4000000059604645px;
+    text-align: left;
+}
