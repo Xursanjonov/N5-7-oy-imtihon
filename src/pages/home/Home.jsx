@@ -1,4 +1,4 @@
-import React, { memo, useState } from 'react'
+import React, { memo, useEffect, useState } from 'react'
 import { GrFormNextLink } from 'react-icons/gr'
 import Hero from '../../components/hero'
 import Sale from '../../components/sale'
@@ -21,6 +21,10 @@ import './home.scss'
 
 const Home = () => {
     const { data: categories, isFetching } = useGetCategoryQuery()
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
 
     return isFetching ? <Loading /> : (
         <section className='home'>

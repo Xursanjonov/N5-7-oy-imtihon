@@ -8,10 +8,14 @@ import { setToken, setUser } from '../../context/slices/authSlice'
 import './login.scss'
 
 const Login = () => {
+    const navigate = useNavigate()
+    if (localStorage.getItem('new-auth-token')) {
+        navigate('/admin/create')
+    }
     const [type, setType] = useState(false)
     const [admins, setAdmins] = useState({ username: 'john33', password: '12345678' })
     const dispatch = useDispatch()
-    const navigate = useNavigate()
+
 
     const handleSubmit = (e) => {
         e.preventDefault()

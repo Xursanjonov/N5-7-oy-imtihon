@@ -1,9 +1,9 @@
 import React, { memo, useEffect } from 'react'
 import { useSelector } from 'react-redux'
+import { useNavigate } from 'react-router-dom'
 import ProductsItem from '../../components/products-cart/ProductsItem'
 import emptyImage from '../../assets/images/wish-list.jpg'
 import './wish-list.scss'
-import { useNavigate } from 'react-router-dom'
 
 const WishList = () => {
     const data = useSelector(state => state.wishlist.value)
@@ -17,7 +17,7 @@ const WishList = () => {
                 <h2 className='like__title'>WishList</h2>
                 <div className='wish-list__container-products'>
                     {data?.map(product => (
-                        <ProductsItem key={product?.id} product={product} />
+                        <ProductsItem key={product?.id} product={product} like={true} />
                     ))}
                 </div>
             </div>

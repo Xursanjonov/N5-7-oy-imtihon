@@ -1,7 +1,7 @@
 import React, { Fragment, memo, useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { FaPenToSquare, FaRegHeart, FaTrashCan } from 'react-icons/fa6';
+import { FaHeart, FaPenToSquare, FaRegHeart, FaTrashCan } from 'react-icons/fa6';
 import images from '../../assets/images/empty.jpg'
 import { addToLike } from '../../context/slices/wishlistSlice'
 import Modal from '../modal';
@@ -11,7 +11,7 @@ import './ProductsCart.scss';
 
 const modalh1 = ['Delete Product', 'Update Product']
 
-const ProductsItem = ({ product, admin }) => {
+const ProductsItem = ({ product, admin, like }) => {
     const [open, setOpen] = useState(false);
     const [modalTitle, setModalTitle] = useState(false);
     const [isHovered, setIsHovered] = useState(false);
@@ -29,7 +29,7 @@ const ProductsItem = ({ product, admin }) => {
                     <span className="discount">-50%</span>
                 </div>
                 {!admin ? <div onClick={() => dispatch(addToLike(product))} className="wishlist-button">
-                    <FaRegHeart color='black' fontSize={20} />
+                    {like ? <FaHeart color='red' fontSize={20} /> : <FaRegHeart color='black' fontSize={20} />}
                 </div> : <></>}
                 <figure className="product-image">
                     <img src={product?.images[0] ?? images} alt="Loveseat Sofa" />

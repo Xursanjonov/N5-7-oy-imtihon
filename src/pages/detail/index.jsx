@@ -13,6 +13,9 @@ const ProductDetail = () => {
   useEffect(() => {
     localStorage.setItem('detailId', id ?? 1)
   }, [id])
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
 
   const handleColorChange = (color) => {
     setSelectedColor(color);

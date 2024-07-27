@@ -1,19 +1,20 @@
-import React, { memo, Fragment } from 'react'
+import React, { memo, Fragment, lazy } from 'react'
 import { Route, Routes } from 'react-router-dom'
-import Layout from './layout'
-import Home from './pages/home/Home'
-import Shop from './pages/shop'
-import Blog from './pages/blog'
-import Contact from './pages/contact'
-import ProductDetail from './pages/detail'
-import Cart from './pages/cart'
-import WishList from './pages/wish-list'
-import Login from './pages/auth/Login'
-import Admin from './pages/admin'
-import CreateProduct from './pages/admin/create'
-import ManageProduct from './pages/admin/manage'
-import CreateCategory from './pages/admin/create-category'
-import ManageCategory from './pages/admin/manage-category'
+const Layout = lazy(() => import('./layout/index'))
+const Home = lazy(() => import('./pages/home/Home'))
+const Shop = lazy(() => import('./pages/shop'))
+const Blog = lazy(() => import('./pages/blog'))
+const Contact = lazy(() => import('./pages/contact'))
+const ProductDetail = lazy(() => import('./pages/detail'))
+const Cart = lazy(() => import('./pages/cart'))
+const WishList = lazy(() => import('./pages/wish-list'))
+const Auth = lazy(() => import('./pages/auth'))
+const Login = lazy(() => import('./pages/auth/Login'))
+const Admin = lazy(() => import('./pages/admin'))
+const CreateProduct = lazy(() => import('./pages/admin/create'))
+const ManageProduct = lazy(() => import('./pages/admin/manage'))
+const CreateCategory = lazy(() => import('./pages/admin/create-category'))
+const ManageCategory = lazy(() => import('./pages/admin/manage-category'))
 
 const App = () => {
 
@@ -29,14 +30,14 @@ const App = () => {
           <Route path='like' element={<WishList />} />
           <Route path='cart' element={<Cart />} />
         </Route>
-
+        <Route path='/auth' element={<Auth />} />
+        <Route path='/login' element={<Login />} />
         <Route path='/admin/' element={<Admin />} >
           <Route path='create' element={<CreateProduct />} />
           <Route path='manage' element={<ManageProduct />} />
           <Route path='create-category' element={<CreateCategory />} />
           <Route path='manage-category' element={<ManageCategory />} />
         </Route>
-        <Route path='/login/' element={<Login />} ></Route>
       </Routes>
     </Fragment>
   )

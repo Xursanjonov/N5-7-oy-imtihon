@@ -33,7 +33,7 @@ const Header = () => {
                         </div>
                         <div className='header__nav__div__btns'>
                             <button className='btns-item'> <SearchIcon fsize={20} /> </button>
-                            <button onClick={() => navigate('/admin/create')} className='btns-item'> <UserIcon fsize={20} /> </button>
+                            <button onClick={() => navigate('/auth')} className='btns-item'> <UserIcon fsize={20} /> </button>
                             <button onClick={() => navigate('/like')} className='btns-item'> <WishListIcon fsize={20} /> </button>
                             <button onClick={() => navigate('/cart')} className='btns-item'> <ShopIcon fsize={20} /> </button>
                         </div>
