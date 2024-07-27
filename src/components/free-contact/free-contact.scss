@@ -1,0 +1,14 @@
+.free__contact {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+    border-top: 1px solid #eee;
+
+    .free__contact-item {
+        text-align: center;
+
+        p:first-child {
+            font-weight: bold;
+        }
+    }
+}

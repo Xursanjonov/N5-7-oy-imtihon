@@ -1,0 +1,49 @@
+.blog-list-container {
+    max-width: 1150px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.tabs {
+    display: flex;
+
+    button {
+        padding: 10px 20px;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+
+        &.active {
+            border-bottom: 2px solid black;
+        }
+    }
+}
+
+.sort-options {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+
+    span {
+        margin-right: 10px;
+    }
+
+    select {
+        padding: 5px;
+    }
+}
+
+.blog-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.show-more {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: 1px solid black;
+    background-color: white;
+    cursor: pointer;
+}
