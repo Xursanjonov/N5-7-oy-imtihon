@@ -1,0 +1,37 @@
+.product__delete {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+
+    &-h4 {
+        width: 100%;
+        font-size: 19px;
+    }
+    &-btn {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        gap: 10px;
+
+        .delete__product {
+            padding: 6px 15px;
+            border: 0;
+            border: .8px solid #6C7275;
+            font-weight: 700;
+            border-radius: 3px;
+            background-color: #fff;
+
+        }
+        .calncal:hover {
+            background-color: #6C7275;
+            border-color: #6C7275;
+        }
+        .del:hover {
+            color: white;
+            border-color: #141718;
+            background-color: #141718;
+        }
+    }
+}

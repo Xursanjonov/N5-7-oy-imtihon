@@ -1,9 +1,14 @@
 import React from 'react'
 import { memo } from 'react'
+import Newsletter from '../../components/newsletter'
+import Bloghero from '../../components/hero/Bloghero'
 
 const Blog = () => {
     return (
-        <div>Blog</div>
+        <section className='blog'>
+            <Bloghero />
+            <Newsletter />
+        </section>
     )
 }
 

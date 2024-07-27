@@ -1,0 +1,28 @@
+.login {
+    max-width: 1920px;
+    width: 100%;
+    height: 947px;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.login__img {
+    max-width: 900px;
+    width: 100%;
+    max-height: 947px;
+    height: 100%;
+
+    &-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.login__form {
+    width: 456px;
+    height: 376px;
+    margin: 0 auto;
+    border: 1px solid #000;
+}

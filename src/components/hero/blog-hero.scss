@@ -1,4 +1,4 @@
-.shop-hero {
+.blog__hero {
     max-width: 1150px;
     width: 100%;
     height: 480px;
@@ -7,15 +7,15 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    
-    .shop-hero__img {
+
+    .blog__hero__img {
         max-width: 1920px;
         width: 100%;
         margin: 0 auto;
         height: 100%;
         position: absolute;
         object-fit: cover;
-        
+
         &-image {
             width: 100%;
             height: 100%;
@@ -26,7 +26,7 @@
         }
     }
 
-    .shop-hero__content {
+    .blog__hero__content {
         width: 540px;
         margin: 0 auto;
         z-index: 2;

@@ -18,7 +18,7 @@ const Header = () => {
             <div className={`${show ? 'header__top' : 'none'}`}>
                 <span className='header__top-icon'><HeaderTopIcon /></span>
                 <p>30% off storewide — Limited time!</p>
-                <Button title={'Shop Now'} icon={true} color={'color'} />
+                <Button title={'Shop Now'} onClick={() => navigate('/shop')} icon={true} color={'color'} />
                 <button onClick={() => setShow(!show)} className='header__top-close'> <CloseIcon fsize={20} /> </button>
             </div>
             <header className='header'>
@@ -33,7 +33,7 @@ const Header = () => {
                         </div>
                         <div className='header__nav__div__btns'>
                             <button className='btns-item'> <SearchIcon fsize={20} /> </button>
-                            <button onClick={() => navigate('/login')} className='btns-item'> <UserIcon fsize={20} /> </button>
+                            <button onClick={() => navigate('/admin/create')} className='btns-item'> <UserIcon fsize={20} /> </button>
                             <button onClick={() => navigate('/like')} className='btns-item'> <WishListIcon fsize={20} /> </button>
                             <button onClick={() => navigate('/cart')} className='btns-item'> <ShopIcon fsize={20} /> </button>
                         </div>

@@ -3,6 +3,7 @@ import { memo } from 'react'
 import './modal.scss'
 
 const Modal = ({ title, children, close }) => {
+
     return (
         <Fragment>
             <div onClick={() => close(null)} className='overlay'></div>

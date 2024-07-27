@@ -1,0 +1,14 @@
+.admin {
+    max-width: 1920px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 350px 1fr;
+}
+
+.admin__content {
+    max-width: 1520px;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 2;
+    overflow-y: auto;
+}
