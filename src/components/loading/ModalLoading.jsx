@@ -3,7 +3,7 @@ import './loading.scss'
 
 const ModalLoading = () => {
     return (
-        <span class="loader__new"></span>
+        <span className="loader__new"></span>
     )
 }
 

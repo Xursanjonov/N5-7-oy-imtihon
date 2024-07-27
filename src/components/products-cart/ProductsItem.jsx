@@ -32,7 +32,7 @@ const ProductsItem = ({ product, admin }) => {
                     <FaRegHeart color='black' fontSize={20} />
                 </div> : <></>}
                 <figure className="product-image">
-                    <img src={product?.images ? product?.images[0] : images} alt="Loveseat Sofa" />
+                    <img src={product?.images[0] ?? images} alt="Loveseat Sofa" />
                     {!admin ? <button className="add-to-cart-button">Add to cart</button> : <></>}
                 </figure>
                 <div className="product-info">

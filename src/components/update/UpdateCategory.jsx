@@ -22,7 +22,7 @@ const UpdateCategory = ({ category, setOpen }) => {
             </label>
             <label className='update-category__label' htmlFor="category-img">
                 <span>Category Image</span>
-                <input value={name?.image} onChange={(e) => setName(p => ({ ...p, name: e.target.value }))}
+                <input value={name?.image} onChange={(e) => setName(p => ({ ...p, image: e.target.value }))}
                     type="text" placeholder="Category Image" id="category-img" />
             </label>
             <div className='update-category__btn' htmlFor="category__btn">
