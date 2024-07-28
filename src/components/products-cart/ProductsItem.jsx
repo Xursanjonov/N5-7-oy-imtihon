@@ -8,6 +8,7 @@ import Modal from '../modal';
 import Update from '../update';
 import DeleteProduct from '../delete';
 import './ProductsCart.scss';
+import { addToCart } from '../../context/slices/cartSlice';
 
 const modalh1 = ['Delete Product', 'Update Product']
 
@@ -33,7 +34,7 @@ const ProductsItem = ({ product, admin, like }) => {
                 </div> : <></>}
                 <figure className="product-image">
                     <img src={product?.images[0] ?? images} alt="Loveseat Sofa" />
-                    {!admin ? <button className="add-to-cart-button">Add to cart</button> : <></>}
+                    {!admin ? <button onClick={() => dispatch(addToCart(product))} className="add-to-cart-button">Add to cart</button> : <></>}
                 </figure>
                 <div className="product-info">
                     <div className="product-rating">★★★★★</div>

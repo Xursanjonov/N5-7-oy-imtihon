@@ -15,6 +15,9 @@ const CreateProduct = lazy(() => import('./pages/admin/create'))
 const ManageProduct = lazy(() => import('./pages/admin/manage'))
 const CreateCategory = lazy(() => import('./pages/admin/create-category'))
 const ManageCategory = lazy(() => import('./pages/admin/manage-category'))
+import CartView from './pages/cart/cart-view'
+import Checkout from './pages/cart/checkout'
+import Complete from './pages/cart/complete'
 
 const App = () => {
 
@@ -28,7 +31,13 @@ const App = () => {
           <Route path='contact' element={<Contact />} />
           <Route path='shop/:id' element={<ProductDetail />} />
           <Route path='like' element={<WishList />} />
-          <Route path='cart' element={<Cart />} />
+
+          <Route path='cart/' element={<Cart />} >
+            <Route index element={<CartView />} />
+            <Route path='checkout' element={<Checkout />} />
+            <Route path='complete' element={<Complete />} />
+          </Route>
+
         </Route>
         <Route path='/auth' element={<Auth />} />
         <Route path='/login' element={<Login />} />

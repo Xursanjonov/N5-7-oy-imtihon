@@ -5,6 +5,7 @@ import { Provider } from 'react-redux'
 import store from './context/store'
 import Loading from './components/loading'
 const App = lazy(() => import('./App.jsx'))
+import 'number-brm'
 import './index.scss'
 
 ReactDOM.createRoot(document.getElementById('root')).render(

@@ -1,8 +1,10 @@
-import React, { memo, useEffect } from 'react'
+import React, { memo, useEffect, useState } from 'react'
+import { Outlet } from 'react-router-dom'
 import empty from '../../assets/images/cart-empty.png'
 import './cart.scss'
 
 const Cart = () => {
+
     useEffect(() => {
         window.scrollTo(0, 0)
     }, [])
@@ -24,7 +26,7 @@ const Cart = () => {
                         </button>
                     </div>
                 </div>
-                <div className='cart__content'>
+                {/* <div className='cart__content'>
                     <div className="cart__content-carts">
                         <ul className='cart__content-carts__ul'>
                             <li>Product</li>
@@ -78,10 +80,12 @@ const Cart = () => {
                             <p>%21.00</p>
                         </label>
                     </div>
-                </div>
+                </div> */}
+                <Outlet />
             </div>
         </section>
     )
 }
+// import './Products.scss';
 
 export default memo(Cart)
