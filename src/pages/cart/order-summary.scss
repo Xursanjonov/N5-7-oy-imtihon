@@ -1,0 +1,100 @@
+.order-summary-container {
+    max-width: 413px;
+    width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    border: 1px solid #6C7275;
+
+    h2 {
+        margin-bottom: 20px;
+    }
+
+    .order-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 15px;
+
+        img {
+            max-width: 50px;
+            margin-right: 10px;
+        }
+
+        .item-details {
+            flex: 1;
+
+            span {
+                display: block;
+            }
+
+            .quantity {
+                display: flex;
+                align-items: center;
+
+                button {
+                    background: none;
+                    border: 1px solid #ccc;
+                    padding: 5px;
+                    cursor: pointer;
+                }
+
+                span {
+                    margin: 0 10px;
+                }
+            }
+        }
+
+        .item-price {
+            font-weight: bold;
+        }
+    }
+
+    .discount {
+        margin-bottom: 20px;
+
+        input[type="text"] {
+            width: calc(100% - 60px);
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        button {
+            padding: 8px;
+            border: none;
+            background-color: #000;
+            color: #fff;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .discount-code {
+            display: block;
+            margin-top: 10px;
+            color: green;
+
+            .remove-button {
+                border: none;
+                background: none;
+                color: red;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .summary-totals {
+        .summary-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .total {
+            font-size: 18px;
+            font-weight: bold;
+        }
+    }
+}

@@ -15,9 +15,9 @@ const CreateProduct = lazy(() => import('./pages/admin/create'))
 const ManageProduct = lazy(() => import('./pages/admin/manage'))
 const CreateCategory = lazy(() => import('./pages/admin/create-category'))
 const ManageCategory = lazy(() => import('./pages/admin/manage-category'))
-import CartView from './pages/cart/cart-view'
-import Checkout from './pages/cart/checkout'
-import Complete from './pages/cart/complete'
+const CartView = lazy(() => import('./pages/cart/cart-view'))
+const Checkout = lazy(() => import('./pages/cart/checkout'))
+const Complete = lazy(() => import('./pages/cart/complete'))
 
 const App = () => {
 

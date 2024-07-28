@@ -1,15 +1,24 @@
 import React, { memo } from 'react'
+import { useDispatch, useSelector } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
 import empty from '../../../assets/images/cart-empty.png'
 import CloseIcon from '../../../assets/icons/CloseIcon';
 import inputLogo from '../../../assets/images/inputLogo.svg';
-import { useDispatch, useSelector } from 'react-redux';
 import { addToCart, decrementCart, removeFromCart } from '../../../context/slices/cartSlice';
 import './cart-view.scss'
 
 const CartView = () => {
     const { value: cartData, subtotal, total } = useSelector(state => state.cart)
     const dispatch = useDispatch()
+    const navigate = useNavigate() 
 
+    const handleCheckout = (e) => {
+        e.preventDefault()
+        if (cartData?.length) {
+            navigate('/cart/checkout')
+            localStorage.setItem('cart-btn', true)
+        }
+    }
 
     return (
         <div className='cartview__container'>
@@ -83,7 +92,7 @@ const CartView = () => {
                     <div>Total</div>
                     <div>${total.brm()}</div>
                 </div>
-                <button className="checkout-button">Checkout</button>
+                <button onClick={handleCheckout} className="checkout-button">Checkout</button>
             </div>
         </div>
     )
